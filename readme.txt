@@ -1,12 +1,10 @@
 === Bulk Page Generator ===
-Contributors: rajkakadiya, rvadhel
-Donate link: https://paypal.me/rvadhel
+Contributors: Amisha
 Tags: bulk page, bulk post, page generator, bulk creator, generator
 Requires PHP: 5.2.4
 Requires at least: 6.0
 Tested up to: 6.5.4
-Stable tag: 1.4.0
-License: GPLv2 or later
+Stable tag: 1.0
 
 Using this plugin user can create Pages/Posts easily with the simplest user interface which provide all the attribute which are necessary while creating Pages/Posts.
 
@@ -57,23 +55,6 @@ After active plugin go to  Bulk page generator menu
 
 
 == Changelog ==
-
-= 1.4.0 =
-Bug Fixed
-Added updater function
-
-= 1.3.1 =
-Updated dynamic parent page dropdown
-
-= 1.3 =
-Fixed admin enqueue script bug
-Tested upto wp version 6.4.2
-
-= 1.2 =
-Tested upto wp version 6.2.2
-
-= 1.1 =
-Fixed error note issue.
 
 = 1.0 =
 Initial version

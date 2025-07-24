@@ -2,15 +2,14 @@
 /*
 Plugin Name: Bulk Page Generator
 Description: Bulk Pages/Posts Generator is a plugin that provides an easy way through which a user can create multiple pages/posts at a time.
-Author: Geek Code Lab
-Version: 1.4.0
-Author URI: https://geekcodelab.com/
+Author: Amisha
+Version: 1.0
 Text Domain : bulk-page-generator
 */
 
 if (!defined('ABSPATH')) exit;
 
-define('BPG_BUILD', '1.4.0');
+define('BPG_BUILD', '1.0');
 
 if (!defined('BPG_PLUGIN_DIR_PATH'))
     define('BPG_PLUGIN_DIR_PATH', plugin_dir_path(__FILE__));
@@ -24,7 +23,6 @@ if (!defined('BPG_PLUGIN_DIR'))
 if (!defined('BPG_PLUGIN_BASENAME'))
     define('BPG_PLUGIN_BASENAME', plugin_basename(__FILE__));
 
-require (BPG_PLUGIN_DIR_PATH .'updater/updater.php');
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-activator.php
@@ -48,9 +46,6 @@ function bpg_plugin_load() {
 $plugin = plugin_basename(__FILE__);
 add_filter("plugin_action_links_$plugin", 'bpg_add_plugin_link');
 function bpg_add_plugin_link($links){
-    $support_link = '<a href="https://geekcodelab.com/contact/" target="_blank" >' . __('Support', 'bulk-page-generator') . '</a>';
-    array_unshift($links, $support_link);
-
     $setting_link = '<a href="' . admin_url('admin.php?page=bulk-page-generator') . '">' . __('Settings', 'bulk-page-generator') . '</a>';
     array_unshift($links, $setting_link);
 
